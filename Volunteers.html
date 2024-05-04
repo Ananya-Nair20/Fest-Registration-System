@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Volunteers</title>
+    </head>
+    <body>
+        <div class="bg-image">
+            
+        </div>
+        <div class="register-box">
+            <h2>Volunteers Registration </h2>
+            <form id="registration-form" action="conn_2.php" method="POST">
+                    <input type="hidden" name="form_id" value="volunteer">
+                    <input type="text" id="V_Full_Name" placeholder="V_Full_Name" required>
+                 <!-- <input type="text" id="last-name" placeholder ="Last name" required> -->
+            
+                <div class="radio-button">
+                    <label>Gender:</label>
+                    <div class="gender-field">
+                        <input type="radio" id="male" name="V_Gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="V_Gender" value="female" required>
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="V_Gender" value="other" required>
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            
+                    <input type="number" id="V_Age" placeholder="V_Age" required>
+                    <input type="tel" id="V_Phone " placeholder="V_Phone " required>
+                    <input type="email" id="V_Email_ID" placeholder="V_Email_ID" required>
+                    <input type="text" id="V_Enrollment_no" placeholder="V_Enrollment_no">
+                    <input type="text" id="Skills" placeholder="Skills">
+                    <input type="password" id="initial-password" required placeholder = "Initial_password">
+                    <br>
+                    <!-- <label for="V_password">Confirm Password:</label> -->
+                    <input type="password" id="V_password" required placeholder="V_password" >
+                    <br>
+ 
+                    <button onclick="window.location.href = 'thank-you.html';"> Next </button>
+           <!--- <button type="button" id="next-btn">Next</button> -->
+                <div id="error-message" class="error-message"></div>
+            </form>
+    
+        <script src="Participants.js"></script>
+    </body>
+    </html>

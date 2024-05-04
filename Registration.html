@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="bg-image"></div>
+    <centre>
+    <div class="register-box">
+        <h2>Participant</h2>
+        
+            <form id="registration-form" onsubmit="registerUser(); return false;">
+            <input type="text" id="first-name" placeholder="First Name" required>
+            <input type="text" id="middle-name" placeholder="Middle Name (Optional)">
+            <input type="text" id="last-name" placeholder="Last Name" required>
+            <div class = "radio-button">
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="Participant_id" placeholder="Participant Id" required>
+            <button type="submit">Register</button>
+        </form>
+        </centre>
+        <p id="error-message" style="color: red;"></p>
+    </div>
+    <script src="Registration.js"></script>
+</body>
+</html>

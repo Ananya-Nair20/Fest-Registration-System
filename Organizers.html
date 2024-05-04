@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Organizers</title>
+    </head>
+    <body>
+        <div class="bg-image">
+        
+        </div>
+        <div class="register-box">
+            <h2>Organizers Registration </h2>
+            <form id="registration-form"  action="conn_2.php" method="POST>
+                <input type="hidden" name="form_id" value="organizer">
+                    <input type="text" id="O_Full Name" placeholder="O_Full Name" required>
+                   <!-- <input type="text" id="last-name" placeholder ="Last name" required> -->
+            
+                <div class="radio-button">
+                    <label>Gender:</label>
+                    <div class="gender-field">
+                        <input type="radio" id="male" name="O_Gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="O_Gender" value="female" required>
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="O_Gender" value="other" required>
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+            
+                    <input type="number" id="O_Age" placeholder="O_Age" required>
+                    <input type="tel" id="O_Phone" placeholder="O_Phone" required>
+                    <input type="email" id="O_Email_ID" placeholder="O_Email_ID" required>
+                    <input type="text" id="O_Enrollment_No" placeholder="O_Enrollment_No">
+                    <input type="text" id="Expert_in" placeholder="Expert in">
+                    
+                    <input type="password" id="initial-password" required placeholder = "Initial_password">
+                    <br>
+                    <!-- <label for="confirm-password">Confirm Password:</label> -->
+                    <input type="password" id="Confirm-password" required placeholder="Confirm_password" >
+                    <br>
+            
+                    <!-- <button type="button" id="next-btn">Next</button> -->
+                <div id="error-message" class="error-message"></div>
+
+                
+            <button onclick="window.location.href = 'thank-you.html';"> Next </button>
+            </form>
+    
+        <script src="Participants.js"></script>
+    </body>
+    </html>
