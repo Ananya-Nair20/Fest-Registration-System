@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="JS_file.js"></script>
+</head>
+<body>
+  <div class="bg-image"></div>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="text" id="full_name" placeholder="Full Name" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <div class="dropdown-container">
+        <label for="Roles">List of Roles:</label>
+        <select name="Role" id="Roles">
+          <option value="Participant">Participant</option>
+          <option value="Organizer">Organizer</option>
+          <option value="Volunteer">Volunteer</option>
+        </select>
+      </div>
+      <button type="button" onclick="validateLogin()">Login</button>
+    </form>
+    <p id="message"></p>
+    <a href="C:\xampp\htdocs\2\options.html">Register</a>
+  </div>
+
+  <script>
+    function validateLogin() {
+      var fullName = document.getElementById("full_name").value;
+      var password = document.getElementById("password").value;
+
+      // Check if full name is "akshaya" and password is "123"
+      if (fullName === "akshaya" && password === "123") {
+        window.location.href = "Login.html";
+      } else if (fullName === "johanna" && password === "12") {
+        window.location.href = "Login.html";
+      } else if (fullName === "ananya" && password === "56") {
+        window.location.href = "Login.html";
+      } else if (fullName === "Ananya Nair" && password === "anu@123") {
+        window.location.href = "Login.html";
+      } else {
+        // Display error message if credentials don't match
+        document.getElementById("message").innerHTML = "Incorrect credentials";
+      }
+    }
+  </script>
+</body>
+</html>
